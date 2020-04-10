@@ -27,6 +27,7 @@ mysql> select now();
 ```
 
 ![](https://github.com/luxiaohuivv/mysql-final-test/blob/master/picture/1.png)
+
 2 组合打印自己的姓名和学号
 
 (例如 张三+123456 或者 zhangsan+123456 显示需包含加号)，写出SQL语句和结果
@@ -67,7 +68,7 @@ mysql> describe t_dept;
 +--------+-------------+------+-----+---------+-------+
 3 rows in set (0.00 sec)
 ```
-
+![](https://github.com/luxiaohuivv/mysql-final-test/blob/master/picture/3.1.png)
 
 表2：其中empno字段为主键
 ```
@@ -119,6 +120,9 @@ Records: 13  Duplicates: 0  Warnings: 0
 
 ```
 
+![](https://github.com/luxiaohuivv/mysql-final-test/blob/master/picture/3.2.png)
+![](https://github.com/luxiaohuivv/mysql-final-test/blob/master/picture/3.3.png)
+
 
 
 
@@ -137,7 +141,11 @@ Records: 13  Duplicates: 0  Warnings: 0
 mysql> INSERT INTO t_employee1(empno,ename,job,mgr,hiredate,sal,comm,deptno)
     -> values(123,"luxiaohui","student",7782,"1999-01-02",null,null,10);
 Query OK, 1 row affected (0.00 sec)
+
 ```
+
+
+![](https://github.com/luxiaohuivv/mysql-final-test/blob/master/picture/3.4.png)
 
 3.2 表中入职时间（Hiredate字段）最短的人。
 ```
@@ -149,6 +157,9 @@ mysql>  select *from t_employee1 where hiredate = (select max(hiredate) from t_e
 +--------+-------+-----------+---------+------+------------+------+------+
 1 row in set (0.00 sec)
 ```
+
+
+![](https://github.com/luxiaohuivv/mysql-final-test/blob/master/picture/3.5.png)
 
 3.3 有几种职位（job字段）？在关系代数中，本操作是什么运算？
 ```
@@ -168,6 +179,9 @@ mysql> select distinct job
 
 6 rows in set (0.00 sec)
 ```
+
+
+![](https://github.com/luxiaohuivv/mysql-final-test/blob/master/picture/3.6.png)
 
 3.4 将 MILLER 的 comm 增加 100； 然后，找到 comm 比 MILLER 低的人；
 ```
