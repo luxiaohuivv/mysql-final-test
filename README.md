@@ -25,6 +25,8 @@ mysql> select now();
 +---------------------+
 1 row in set (0.00 sec)
 ```
+
+![](https://github.com/luxiaohuivv/mysql-final-test/blob/master/picture/1.png)
 2 组合打印自己的姓名和学号
 
 (例如 张三+123456 或者 zhangsan+123456 显示需包含加号)，写出SQL语句和结果
