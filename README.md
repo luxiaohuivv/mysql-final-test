@@ -179,6 +179,8 @@ mysql> select distinct job
 | PRESIDENT |
 +-----------+
 
+本操作是选择运算
+
 
 6 rows in set (0.00 sec)
 ```
