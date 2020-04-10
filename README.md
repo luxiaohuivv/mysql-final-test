@@ -16,7 +16,7 @@
 
 
 1 打印当前时间（例如 2020-04-07 13:41:42），写出SQL语句和结果
-'''
+```
 mysql> select now();
 +---------------------+
 | now()               |
@@ -24,7 +24,7 @@ mysql> select now();
 | 2020-04-10 08:01:31 |
 +---------------------+
 1 row in set (0.00 sec)
-'''
+```
 2 组合打印自己的姓名和学号
 
 (例如 张三+123456 或者 zhangsan+123456 显示需包含加号)，写出SQL语句和结果
@@ -39,7 +39,7 @@ deptno, deptno,    loc
 (30, "SALES", "CHICAGO"),
 (40, "OPERATIONS", "BOSTON")
 ```
-'''
+```
 mysql>  create table t_dept(
     -> deptno int primary key,
     -> dname varchar(20),
@@ -56,7 +56,7 @@ mysql> describe t_dept;
 | loc    | varchar(40) | YES  |     | NULL    |       |
 +--------+-------------+------+-----+---------+-------+
 3 rows in set (0.00 sec)
-'''
+```
 
 
 表2：其中empno字段为主键
@@ -77,7 +77,7 @@ mysql> describe t_dept;
 	(7934, "MILLER", "CLERK", 7782, "1981-03-12", 1300, NULL, 10)
 ```
 
-'''
+```
 mysql> create table t_employee1(
     -> deptno INT NOT NULL,
     -> empno INT PRIMARY KEY,
@@ -107,7 +107,7 @@ mysql> INSERT INTO t_employee1(empno,ename,job,mgr,hiredate,sal,comm,deptno)
 Query OK, 13 rows affected (0.01 sec)
 Records: 13  Duplicates: 0  Warnings: 0
 
-'''
+```
 
 
 
@@ -123,11 +123,11 @@ Records: 13  Duplicates: 0  Warnings: 0
 例如：`(12345,  "Zhangsan", "sTUDENT", 7782, "2000-03-12", NULL, NULL, 10)`
 
 
-'''
+```
 mysql> INSERT INTO t_employee1(empno,ename,job,mgr,hiredate,sal,comm,deptno)
     -> values(123,"luxiaohui","student",7782,"1999-01-02",null,null,10);
 Query OK, 1 row affected (0.00 sec)
-'''
+```
 
 3.2 表中入职时间（Hiredate字段）最短的人。
 
